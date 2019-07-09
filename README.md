@@ -14,6 +14,14 @@ Because sqlite3 is slow, and blocking. If it was slow and non-blocking, who care
 
 ## How to use jester
 
+### Installation
+
+```
+pip install jesterdb
+```
+
+### Starting the server
+
 Simply type the following command to start it, see `--help` to see extra commands.
 
 ```bash
@@ -39,7 +47,7 @@ with JesterClient() as cli:
 
 **close()** | `Disconnect from the server. Already called when using with syntax`
 
-**execute(statement: str, *args)** | `Execute an SQL command on the database`
+**execute(statement: str, \*args)** | `Execute an SQL command on the database`
 
 **execute_many(statement: str, values: List[List[str]])** | `Execute the same statement over a multitude of values`
 
